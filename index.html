@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decodificador || Challenge-Oracle-One</title>
   <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="shortcut icon" href="./assets/images/alura-logo.svg" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -19,16 +20,20 @@
       <div class="buttons-container">
         <span>Apenas letras minúsculas e sem acentos</span>
         <div>
-          <button class="bg-blue">Criptografar</button>
-          <button class="bg-white">Descriptografar</button>
+          <button class="bg-blue" id="cript">Criptografar</button>
+          <button class="bg-white" id="descript">Descriptografar</button>
         </div>
       </div>
     </div>
     <div class="container white-container">
       <div class="no-messege">
         <img src="./assets/images/no-text.svg" alt="Imagem de um homem com uma lupa olhando um diamante." class="img-response">
-        <h2 class="input-response ">Nenhum mensagem encontrada</div>
+        <h2 class="input-response ">Nenhum mensagem encontrada</h2>
         <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+      </div>
+      <div class="with-messege" id="display-none">
+        <p class="messege-response">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda quod alias atque saepe magnam corporis ea provident ullam voluptatibus corrupti, nisi veniam quos reiciendis sequi rerum omnis similique deserunt.</p>
+        <button class="bg-white" id="copy">Copiar</button>
       </div>
     </div>
   </main>

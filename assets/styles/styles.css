@@ -7,6 +7,7 @@
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -31,7 +32,7 @@ main {
   margin-left: auto;
   width: 100%;
   max-width: 1200px;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -59,6 +60,7 @@ main {
 .container.text-container .buttons-container {
   width: 100%;
   min-height: 70px;
+  margin-top: 15px;
 }
 
 .container.text-container .buttons-container span {
@@ -108,12 +110,9 @@ main {
  color: #0A3871;
 }
 
-
-
 .container.white-container {
   width: 30%;
-  height: 100%;
-  min-height: 100%;
+  height: 90vh;
   background: #fff;
   border-radius: 25px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -137,6 +136,43 @@ main {
   color: #495057;
 }
 
+
+.container.white-container .with-messege {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container.white-container .with-messege p {
+  font-size: 24px;
+  color: #495057;
+  text-align: start;
+}
+
+.container.white-container .with-messege button {
+  width: 100%;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.container.white-container .with-messege button.bg-white{
+  background: #FFFFFF;
+  border: 1px #0A3871 solid;
+  color: #0A3871;
+ }
+
+ #display-none {
+  display: none;
+}
+
+
 footer {
   text-align: center;
   font-size: 16px;
@@ -147,4 +183,81 @@ footer {
 footer a {
   text-decoration: none;
   color: #0A3871;
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 90%;
+    max-width: none;
+  }
+}
+@media (max-width: 1200px) {
+  header a {
+    top: 73px;
+    left: 40px;
+  }
+  
+  main {
+    margin-top: 150px;
+    display: block;
+    min-height: auto;
+  }
+
+  .container.text-container,
+  .container.white-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container.text-container {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .container.white-container {
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .container.text-container .buttons-container {
+    margin-top: 60px;
+  }
+
+  .container.white-container .no-messege img {
+    display: none;
+  }
+
+  .container.white-container .with-messege {
+    height: auto;
+  }
+  
+  footer {
+    margin: 30px 0;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 16px;
+    }
+
+    header a {
+      top: 24px;
+      left: 16px;
+    }
+
+    .container.white-container{
+      width: 95%;
+      margin: 40px auto;
+    }
+
+    .container.text-container .buttons-container button {
+      margin-top: 25px;
+    }
+
+    .container.white-container .no-messege h2{
+      margin: 0px 0px 16px 0px;
+    } 
+  }
 }
