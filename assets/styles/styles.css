@@ -60,7 +60,7 @@ main {
 .container.text-container .buttons-container {
   width: 100%;
   min-height: 70px;
-  margin-top: 15px;
+  margin-top: 200px;
 }
 
 .container.text-container .buttons-container span {
@@ -143,6 +143,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all .5s ease-in-out;
 }
 
 .container.white-container .with-messege p {
@@ -207,6 +208,7 @@ footer a {
   .container.white-container {
     width: 100%;
     margin: 0 auto;
+    transition: all .5s ease-in-out;
   }
 
   .container.text-container {
