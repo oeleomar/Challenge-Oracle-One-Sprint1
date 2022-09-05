@@ -93,6 +93,7 @@ const copyText = async () => {
 
   copy.innerText = 'Copiado';
   setTimeout(() => {
+    n 
     copy.innerText = 'Copiar';
   }, 3000);
 }
